@@ -1,0 +1,3 @@
+the rollno is :101
+the name is :sandip
+the address is :bangalore

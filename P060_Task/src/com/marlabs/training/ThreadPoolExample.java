@@ -51,23 +51,3 @@ public class ThreadPoolExample {
 
 	}
 }
-/*
- * Output: The start time of :task 2 04 : 32 : 59
- * 
- * The start time of :task 5 04 : 32 : 59 The start time of :task 4 04 : 32 : 59
- * The start time of :task 1 04 : 32 : 59 The start time of :task 3 04 : 32 : 59
- * The execution time of :task 5 04 : 33 : 00 The execution time of :task 2 04 :
- * 33 : 00 The execution time of :task 4 04 : 33 : 00 The execution time of
- * :task 1 04 : 33 : 00 The execution time of :task 3 04 : 33 : 00 The execution
- * time of :task 5 04 : 33 : 01 The execution time of :task 2 04 : 33 : 01 The
- * execution time of :task 4 04 : 33 : 01 The execution time of :task 1 04 : 33
- * : 01 The execution time of :task 3 04 : 33 : 01 The execution time of :task 5
- * 04 : 33 : 02 The execution time of :task 2 04 : 33 : 02 The execution time of
- * :task 1 04 : 33 : 02 The execution time of :task 4 04 : 33 : 02 The execution
- * time of :task 3 04 : 33 : 02 The execution time of :task 5 04 : 33 : 03 The
- * execution time of :task 2 04 : 33 : 03 The execution time of :task 1 04 : 33
- * : 03 The execution time of :task 4 04 : 33 : 03 The execution time of :task 3
- * 04 : 33 : 03 task 1 is Completed task 5 is Completed task 2 is Completed task
- * 4 is Completed task 3 is Completed
- * -------------------------------------------------------------------------
- */
