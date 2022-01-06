@@ -49,7 +49,7 @@ public class JDBC5 {
 			System.out.println(sql);
 			System.out.println("enter empno");
 			int empno = ob.nextInt();
-			ps = con.prepareStatement(sql);// createStatement();
+			ps = con.prepareStatement(sql);
 			ps.setInt(1, empno);
 			ResultSet rs1 = ps.executeQuery();
 			while (rs1.next()) {
