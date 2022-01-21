@@ -1,6 +1,6 @@
 # JavaTraining(Sandip)
 
-#             For Airline Project this tables are requried:
+For Airline Project this tables we create in orcale:
 
 #create table book(name varchar2(30),email varchar2(30),phoneno varchar2(30),address varchar2(30),age varchar2(30),source varchar2(30),destnation varchar2(30),price varchar2(30));
 
