@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<h1><center>Marlabs Employee Registration Page</center></h1><hr>
+<form action="SaveServlet" method=get>
+<table>
+<tr><td>Name:<td><input type=text name=name size=20/></td></tr>
+<tr><td>Password:<td><input type=text name=password size=20/></td></tr>
+<tr><td>Email:<td><input type="email" name="email" size=20/></td></tr>
+<tr><td>Phoneno:<td><input type=number name="phoneno" size=20/></td></tr>
+<tr><td>Projectname:<td><input type="text" name="projectname" size=20/></td></tr>
+<tr><td>Country:<td><select name="country">
+<option>India</option>
+<option>USA</option>
+<option>UK</option>
+<option>Others</option>
+</select>
+</tr>
+<tr><td><input type=submit value="Save Employee"></td></tr>
+</table>
+</form>
+<br>
+<a href="ViewServlet">View Employee</a>
+</html>
