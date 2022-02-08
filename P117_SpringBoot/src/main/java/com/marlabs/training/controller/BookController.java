@@ -18,30 +18,32 @@ public class BookController {
 	
 	
 	@PostMapping("/")
-	public void addBook(Book book) {
-		Book b4 = new Book(4,"Spring Core", 700.00, "Sandip");
-		bookservice.addBook(b4);
+	public void addBook(@RequestBody Book book) {
+		bookservice.addBook(book);
 
 	}
 	
-	@PutMapping("/bookId")
-	public void updateBook(Book book,int bookId) {
-		bookservice.updateBook(book, bookId);
+	@PutMapping("/{bookId}")
+	public void updateBook(@RequestBody Book book, @PathVariable String bookId) {
+		bookservice.updateBook(book,Integer.parseInt(bookId));
 	}
 
-	@DeleteMapping("/bookId")
-	public void deleteBook(int bookId) {
+	@DeleteMapping("/{bookId}")
+	public void deleteBook(@PathVariable String bookId) {
+		bookservice.deleteBook(Integer.parseInt(bookId));
 	}
 	
-	@GetMapping("/bookId")
-	public Book getBookById(int bookId) {
-		return bookservice.getBookById(bookId);
+	@GetMapping("/{bookId}")
+	public Book getBookById(@PathVariable String bookId) {
+		Book bookDetails=bookservice.getBookById(Integer.parseInt(bookId));
+		return bookDetails;
+
 	} 
 
 	@GetMapping("/")
 	public List<Book> getAllBook() {
-		List<Book> books=bookservice.getAllBook();
- 		return books;
+		List<Book> allBooksList=bookservice.getAllBook();
+ 		return allBooksList;
 		
 	}
 }

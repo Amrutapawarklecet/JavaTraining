@@ -3,11 +3,12 @@ package com.marlabs.training.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.marlabs.training.entity.Book;
 
-@Service
+@Component
 public class BookService implements ImplBookService {
 
 	private static List<Book> books = new ArrayList<Book>();
@@ -42,7 +43,8 @@ public class BookService implements ImplBookService {
 
 	@Override
 	public Book getBookById(int bookId) {
-		return (Book) books;
+		
+		return books.stream().filter(b ->b.getBookId() == bookId).findFirst().get();
 	}
 
 	@Override
