@@ -1,0 +1,65 @@
+html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+        text-align: center;
+            font-weight: 10px;
+            color: black;
+
+        }
+
+        label {
+            color: black;
+        }
+
+        .container {
+            width: 40%;
+            padding: 20px;
+            margin: auto;
+            background-color: rgba(247, 236, 236, 0.637);
+            border-radius: 10px;
+
+        }
+        
+        
+  /* Full-width inputs */
+  input[type=text], input[type=password], input[type=email], input[type=number], input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid lightslategrey;
+    box-sizing: border-box;
+  }
+  
+    /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
